@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Happy Birthday Guna Varma!</title>
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      padding: 50px;
+      color: #fff;
+    }
+
+    /* Overlay for better text readability */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: 4em;
+      color: #ffeb3b;
+      animation: fadeIn 2s ease-in-out;
+      text-shadow: 2px 2px 8px #000;
+    }
+
+    h2 {
+      font-size: 2.5em;
+      color: #ffffff;
+      animation: fadeIn 2.5s ease-in-out;
+      text-shadow: 1px 1px 6px #000;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-top: 20px;
+      animation: fadeIn 3s ease-in-out;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    .cake {
+      font-size: 5em;
+      margin-top: 30px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎉 Happy Birthday! 🎉</h1>
+  <h2>Dear Guna Varma</h2>
+  <p>Wishing you a day filled with fun, laughter, and all your favorite things.</p>
+  <p>You're growing up so fast, and I'm so proud of the amazing person you're becoming.</p>
+  <p>Have an awesome birthday, little bro! 🎈🎁🎂</p>
+  <div class="cake">🎂</div>
+
+  <!-- Birthday Song -->
+  <audio autoplay loop>
+    <source src="birthday_song.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+</body>
+</html>
